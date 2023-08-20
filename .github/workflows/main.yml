@@ -22,7 +22,7 @@ jobs:
       uses: azure/CLI@v1
       with:
         inlineScript: |
-           az cdn endpoint purge --content-paths  "/*" --profile-name "resume-kroutled.azureedge.net" --name "resume-kroutled" --resource-group "RG-CloudResumeChallenge"
+           az cdn endpoint purge --content-paths  "/*" --profile-name "cloudresumeschallengeCDN" --name "resume-kroutled" --resource-group "RG-CloudResumeChallenge"
 
   # Azure logout
     - name: logout
